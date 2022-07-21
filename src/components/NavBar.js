@@ -7,7 +7,10 @@ function NavBar() {
       <NavBar>
         <Nav>
           <NavItem>
-            <Nav.Link as={Link} to="/" className="navbar-link">About Me</Nav.Link>
+            <Nav.Link as={Link} to="/" className="navbar-link">Home</Nav.Link>
+          </NavItem>
+          <NavItem>
+            <Nav.Link as={Link} to="/AboutMe" className="navbar=link">About Me</Nav.Link>
           </NavItem>
         </Nav>
       </NavBar>
