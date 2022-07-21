@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { 
-  Switch,
+  Routes,
   Route,
 } from 'react-router-dom';
 import Header from './components/Header';
@@ -15,14 +15,10 @@ function App() {
     <>
       <Header />
       <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/AboutMe">
-          <AboutMe />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/AboutMe" element={<AboutMe />} />
+      </Routes>
       <Footer />
     </>
   )
