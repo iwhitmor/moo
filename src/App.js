@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { 
+import {
   Routes,
   Route,
 } from 'react-router-dom';
@@ -21,7 +21,7 @@ function App() {
       </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
 export default App;
